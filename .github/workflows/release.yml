@@ -1,0 +1,19 @@
+name: "Release Dev Container Feature"
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Publish Features"
+        uses: devcontainers/action@v1
+        with:
+          publish-features: "true"
+          base-path-to-features: "./src"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

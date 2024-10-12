@@ -61,6 +61,18 @@ You can customize the feature by modifying the options in your `devcontainer.jso
 }
 ```
 
+## Development and Release Process
+
+This project uses GitHub Actions for continuous integration and deployment. The workflow is configured to automatically publish both Dev Container Features and Templates when changes are pushed to the main branch.
+
+Key aspects of the workflow:
+- Runs on pushes to the main branch
+- Publishes Dev Container Features using `devcontainers/action@v1.4.3`
+- Publishes Templates using `devcontainers/action@v1`
+- Requires permissions for packages, contents, and pull requests
+
+For more details, see the `.github/workflows/release.yml` file in the repository.
+
 ## Contributing
 
 Contributions to improve the FSD42 Golang Dev Container Feature are welcome. Please feel free to submit issues or pull requests on our GitHub repository.

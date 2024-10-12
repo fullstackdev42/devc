@@ -1,0 +1,25 @@
+{
+  "name": "FSD42 Golang Dev Container",
+  "id": "fsd42-go",
+  "version": "1.0.0",
+  "description": "A comprehensive development container for Golang projects",
+  "options": {
+    "goVersion": {
+      "type": "string",
+      "proposals": ["1.23", "latest"],
+      "default": "1.23",
+      "description": "Select the Golang version"
+    },
+    "nodeVersion": {
+      "type": "string",
+      "proposals": ["lts", "latest"],
+      "default": "lts",
+      "description": "Select the Node.js version"
+    },
+    "installZsh": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install and configure Zsh"
+    }
+  }
+}

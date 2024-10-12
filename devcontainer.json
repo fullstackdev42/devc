@@ -5,7 +5,7 @@
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "mounts": ["type=bind,source=/home/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,readonly"],
   "features": {
-    "ghcr.io/your-repo/fsd42-go:1": {
+    "ghcr.io/fullstackdev42/fsd42-go:1": {
       "goVersion": "1.23",
       "nodeVersion": "lts",
       "installZsh": true
